@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <img src="headshot.jpg" alt="Your Name" class="headshot">
+
+  <p class="contact">
+    <a href="mailto:you@example.com">you@example.com</a> &nbsp;·&nbsp;
+    <a href="cv.pdf">CV</a> &nbsp;·&nbsp;
+    <a href="https://github.com/yourname">GitHub</a>
+  </p>
+
+  <h1>Your Name</h1>
+
+  <p>
+    I am a [role — e.g. Ph.D. candidate / researcher / engineer] in [field] at
+    <a href="#">Your Institution</a>. My work focuses on
+    [one or two sentences on what you actually work on].
+  </p>
+
+  <p>
+    Previously, I was [prior role] at <a href="#">Previous Institution</a>.
+    I received my [degree] from <a href="#">School</a>.
+  </p>
+
+  <h2>Research</h2>
+
+  <div class="entry">
+    <p class="entry-title">Title of Paper One</p>
+    <p class="entry-meta">with Coauthor Name</p>
+    <p class="abstract-toggle">Abstract</p>
+    <div class="abstract-content">
+      <p>Short abstract text goes here. Explain the question, method, and
+      finding in a few sentences.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <p class="entry-title">Title of Paper Two</p>
+    <p class="entry-meta">with Coauthor Name</p>
+    <p class="abstract-toggle">Abstract</p>
+    <div class="abstract-content">
+      <p>Short abstract text goes here.</p>
+    </div>
+  </div>
+
+  <h2>Writing</h2>
+
+  <p>
+    <a href="#">2026 — Title of an essay or post</a><br>
+    <a href="#">2025 — Another piece of writing</a>
+  </p>
+
+  <h2>More</h2>
+
+  <p>
+    <a href="#">Photos I've taken</a><br>
+    <a href="#">Notes / garden</a>
+  </p>
+
+<script>
+  document.querySelectorAll(".abstract-toggle").forEach(function (toggle) {
+    toggle.addEventListener("click", function () {
+      const abstract = toggle.nextElementSibling;
+      abstract.classList.toggle("show");
+    });
+  });
+</script>
+
+</body>
+</html>
