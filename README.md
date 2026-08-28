@@ -1,2 +1,2 @@
-# elizabethbli.github.io
-Personal website!
+# Personal Website
+Woohoo!
